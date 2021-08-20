@@ -1,0 +1,70 @@
+<mat-card class="example-card">
+  <mat-card-content>
+    <mat-list>
+      <div mat-subheader>Items</div>
+      <mat-list-item *ngFor="let item of shoppingCart.items$ | async">
+        <img
+          mat-list-icon
+          src="{{ item.product?.image }}"
+          alt="{{ item.product?.title }}"
+        />
+        <div mat-line>{{ item.product.title }}</div>
+        <div mat-line>Qty:{{ item.count }}</div>
+        <h5 mat-line>{{ item.count * item.product.price }} $</h5>
+
+        <button
+          mat-icon-button
+          color="accent"
+          title="remove"
+          (click)="remove(item.product)"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-list-item>
+
+      <mat-divider></mat-divider>
+      <div mat-subheader>Tax</div>
+
+      <mat-list-item>
+        <mat-icon mat-list-icon>payments</mat-icon>
+        <div mat-line>{{ taxAmount }} $</div>
+      </mat-list-item>
+
+      <mat-divider></mat-divider>
+      <div mat-subheader>Payment</div>
+
+      <div class="payment-container">
+        <h4>Choose Payment Type</h4>
+        <mat-form-field appearance="fill">
+          <mat-label>Payment Type</mat-label>
+          <mat-select (selectionChange)="paymentTypeChange($event)">
+            <mat-option
+              *ngFor="let paymentType of paymentTypes"
+              [value]="paymentType.key"
+            >
+              {{ paymentType.title }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <extension-host
+          *ngIf="selectedPaymentType"
+          [app]="selectedPaymentType"
+        ></extension-host>
+      </div>
+    </mat-list>
+  </mat-card-content>
+  <mat-card-actions>
+    <h5>
+      Total Price:{{ ((shoppingCart.price$ | async) ?? 0) + taxAmount }} $
+    </h5>
+    <button
+      disabled="{{ (shoppingCart.count$ | async) === 0 }}"
+      mat-flat-button
+      color="accent"
+      (click)="checkout()"
+    >
+      Proceed to checkout
+    </button>
+  </mat-card-actions>
+</mat-card>

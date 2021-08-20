@@ -1,0 +1,46 @@
+<button
+  mat-icon-button
+  (click)="isOpen = !isOpen"
+  cdkOverlayOrigin
+  #trigger="cdkOverlayOrigin"
+>
+  <mat-icon matBadgeColor="accent" matBadge="{{ shoppingCart.count$ | async }}"
+    >shopping_cart</mat-icon
+  >
+</button>
+
+<ng-template
+  cdkConnectedOverlay
+  [cdkConnectedOverlayOrigin]="trigger"
+  [cdkConnectedOverlayOpen]="isOpen"
+>
+  <mat-card class="example-card">
+    <mat-card-content>
+      <mat-list *ngIf="shoppingCart.count$ | async; else emptyCart">
+        <mat-list-item *ngFor="let item of shoppingCart.items$ | async">
+          <img
+            mat-list-icon
+            src="{{ item.product?.image }}"
+            alt="{{ item.product?.title }}"
+          />
+          <div mat-line>{{ item.product.title }}</div>
+          <div mat-line>Qty:{{ item.count }}</div>
+          <h5 mat-line>{{ item.count * item.product.price }} $</h5>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    <mat-card-actions *ngIf="shoppingCart.count$ | async">
+      <h5>Total Price:{{ shoppingCart.price$ | async }} $</h5>
+      <button mat-flat-button color="accent" (click)="navigateToCart()">
+        Checkout
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</ng-template>
+
+<ng-template #emptyCart>
+  <h5>Shopping Cart is empty!</h5>
+  <button mat-flat-button color="primary" (click)="navigateToHome()">
+    START SHOPPING NOW
+  </button>
+</ng-template>

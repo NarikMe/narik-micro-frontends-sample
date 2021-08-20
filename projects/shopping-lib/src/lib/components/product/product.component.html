@@ -1,0 +1,10 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ product?.title }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{ product?.image }}" alt="{{ product?.title }}" />
+  <mat-card-actions>
+    <h5 class="price">{{ product?.price }}$</h5>
+    <button mat-flat-button color="primary" (click)="add()">ADD</button>
+  </mat-card-actions>
+</mat-card>

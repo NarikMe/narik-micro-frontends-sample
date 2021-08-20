@@ -1,0 +1,84 @@
+{
+  "apps": [
+    {
+      "key": "shopping-cart-button",
+      "load": {
+        "remote": {
+          "key": "shopping_cart_button",
+          "entry": "assets/apps/shopping-cart/shopping-cart-button/remoteEntry.js",
+          "exposedModule": "./app",
+          "development": {
+            "entry": "http://localhost:4202/remoteEntry.js",
+            "active": false
+          }
+        }
+      },
+      "initialize": {
+        "type": "angular-component",
+        "component": "AppComponent",
+        "module": "AppModule"
+      }
+    },
+    {
+      "key": "shopping-cart-service",
+      "eagerLoad": true,
+      "eagerInitialize": true,
+      "load": {
+        "remote": {
+          "key": "shopping_cart_service",
+          "entry": "assets/apps/shopping-cart/shopping-cart-service/remoteEntry.js",
+          "exposedModule": "./app",
+          "development": {
+            "entry": "http://localhost:4207/remoteEntry.js",
+            "active": false
+          }
+        }
+      },
+      "initialize": {
+        "type": "angular-service",
+        "providers": "providers"
+      }
+    },
+    {
+      "key": "payment-type1",
+      "load": {
+        "remote": {
+          "key": "payment_type1",
+          "entry": "assets/apps/shopping-cart/payment-type1/remoteEntry.js",
+          "exposedModule": "./web-components"
+        }
+      },
+      "initialize": {
+        "type": "custom-element",
+        "elementName": "payment-type1"
+      }
+    },
+    {
+      "key": "payment-type2",
+      "load": {
+        "remote": {
+          "key": "payment_type2",
+          "entry": "assets/apps/shopping-cart/payment-type2/remoteEntry.js",
+          "exposedModule": "./web-components"
+        }
+      },
+      "initialize": {
+        "type": "custom-element",
+        "elementName": "payment-type2"
+      }
+    }
+  ],
+  "extension-points": [
+    { "key": "shopping-cart-button", "app": "shopping-cart-button" },
+    {
+      "key": "payment-type",
+      "app": "payment-type1",
+      "title": "Payment Type 1"
+    },
+    {
+      "key": "payment-type",
+      "app": "payment-type2",
+      "title": "Payment Type 2"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<button
+  mat-icon-button
+  (click)="isOpen = !isOpen"
+  cdkOverlayOrigin
+  #trigger="cdkOverlayOrigin"
+>
+  <mat-icon>person</mat-icon>
+</button>
+
+<ng-template
+  cdkConnectedOverlay
+  [cdkConnectedOverlayOrigin]="trigger"
+  [cdkConnectedOverlayOpen]="isOpen"
+>
+  <mat-card class="example-card">
+    <mat-card-content>
+      <mat-action-list>
+        <button mat-list-item (click)="navigateToProfile()">Profile</button>
+        <button mat-list-item (click)="logout()">Logout</button>
+      </mat-action-list>
+    </mat-card-content>
+  </mat-card>
+</ng-template>

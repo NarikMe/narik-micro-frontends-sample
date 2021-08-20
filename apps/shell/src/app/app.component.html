@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Micro Frontends Sample</span>
+  <span class="example-spacer"></span>
+
+  <extension-host key="shopping-cart-button"></extension-host>
+
+  <extension-host key="current-user"></extension-host>
+</mat-toolbar>
+
+<div class="container"><router-outlet></router-outlet></div>

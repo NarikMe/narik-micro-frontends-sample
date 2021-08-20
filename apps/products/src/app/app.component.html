@@ -1,0 +1,7 @@
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="20%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let product of products$ | async">
+      <product (addToShoppingCartRequest)="addToShoppingCart($event)" [product]="product"></product>
+    </div>
+  </div>
+</div>
