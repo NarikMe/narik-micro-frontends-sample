@@ -28,9 +28,9 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
-    "@narik/micro-frontends-core": "^0.0.1",
-    "@narik/micro-frontends-infrastructure": "^0.0.1",
-    "@narik/micro-frontends-ui": "^0.0.1",
+    "@narik/micro-frontends-core": "^1.0.0",
+    "@narik/micro-frontends-infrastructure": "^1.0.0",
+    "@narik/micro-frontends-ui": "^1.0.0",
     "rxjs": "~7.3.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
