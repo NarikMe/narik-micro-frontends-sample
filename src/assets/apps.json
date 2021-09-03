@@ -12,7 +12,7 @@
         }
       }
     },
-    "initialize": {
+    "handle": {
       "type": "angular-app",
       "module": "AppModule",
       "bootstrapComponent": "AppComponent"
@@ -32,7 +32,7 @@
         }
       }
     },
-    "initialize": {
+    "handle": {
       "type": "angular-routing-app",
       "module": "AppModule"
     },
@@ -59,7 +59,7 @@
         }
       }
     },
-    "initialize": {
+    "handle": {
       "type": "angular-routing-app",
       "module": "AppModule"
     },
@@ -84,7 +84,7 @@
         }
       }
     },
-    "initialize": {
+    "handle": {
       "type": "angular-routing-app",
       "module": "AppModule",
       "path": ""
@@ -93,7 +93,6 @@
   {
     "key": "tax-service",
     "eagerLoad": true,
-    "eagerInitialize": true,
     "load": {
       "remote": {
         "key": "tax_service",
@@ -105,7 +104,7 @@
         }
       }
     },
-    "initialize": {
+    "handle": {
       "type": "angular-service",
       "providers": "providers"
     }

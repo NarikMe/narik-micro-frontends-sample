@@ -13,7 +13,7 @@
           }
         }
       },
-      "initialize": {
+      "handle": {
         "type": "angular-component",
         "component": "AppComponent",
         "module": "AppModule"

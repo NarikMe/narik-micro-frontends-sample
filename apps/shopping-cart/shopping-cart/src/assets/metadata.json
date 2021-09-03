@@ -13,7 +13,7 @@
           }
         }
       },
-      "initialize": {
+      "handle": {
         "type": "angular-component",
         "component": "AppComponent",
         "module": "AppModule"
@@ -22,7 +22,6 @@
     {
       "key": "shopping-cart-service",
       "eagerLoad": true,
-      "eagerInitialize": true,
       "load": {
         "remote": {
           "key": "shopping_cart_service",
@@ -34,7 +33,7 @@
           }
         }
       },
-      "initialize": {
+      "handle": {
         "type": "angular-service",
         "providers": "providers"
       }
@@ -48,7 +47,7 @@
           "exposedModule": "./web-components"
         }
       },
-      "initialize": {
+      "handle": {
         "type": "custom-element",
         "elementName": "payment-type1"
       }
@@ -62,7 +61,7 @@
           "exposedModule": "./web-components"
         }
       },
-      "initialize": {
+      "handle": {
         "type": "custom-element",
         "elementName": "payment-type2"
       }
