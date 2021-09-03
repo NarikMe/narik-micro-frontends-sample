@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { MicroFrontendsCoreModule } from '@narik/micro-frontends-core';
-import {
-  MicroFrontendsService,
-} from '@narik/micro-frontends-infrastructure';
+import { AppHandler, MicroFrontendsService } from '@narik/micro-frontends-infrastructure';
+import { AppHostComponent } from './app-host/app-host.component';
 import { AppComponent } from './app.component';
+import { VueAppHandler } from './vue-app-handler.service';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AppHostComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -23,6 +23,11 @@ import { AppComponent } from './app.component';
       provide: APP_INITIALIZER,
       useFactory: initializeMicroFrontendsService,
       deps: [MicroFrontendsService],
+      multi: true,
+    },
+    {
+      provide: AppHandler,
+      useClass: VueAppHandler,
       multi: true,
     },
   ],

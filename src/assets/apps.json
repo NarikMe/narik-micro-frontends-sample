@@ -46,7 +46,6 @@
   },
   {
     "key": "user-profile",
-
     "eagerInitialize": true,
     "load": {
       "remote": {
@@ -107,6 +106,25 @@
     "handle": {
       "type": "angular-service",
       "providers": "providers"
+    }
+  },
+  {
+    "key": "vue-app1",
+    "load": {
+      "remote": {
+        "key": "vue_app1",
+        "entry": "assets/apps/vue-app1/remoteEntry.js",
+        "exposedModule": "./app-creator",
+        "development": {
+          "entry": "http://localhost:4208/remoteEntry.js",
+          "active": false
+        }
+      }
+    },
+    "handle": {
+      "type": "vue-app",
+      "creator": "AppCreator",
+      "path": "vue-app"
     }
   }
 ]
