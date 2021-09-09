@@ -4,30 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { MicroFrontendsCoreModule } from '@narik/micro-frontends-core';
-import { AppHandler, MicroFrontendsService } from '@narik/micro-frontends-infrastructure';
-import { AppHostComponent } from './app-host/app-host.component';
+import { MicroFrontendsService } from '@narik/micro-frontends-infrastructure';
+import { MicroFrontendsVueHandlersModule } from '@narik/micro-frontends-vue-handlers';
 import { AppComponent } from './app.component';
-import { VueAppHandler } from './vue-app-handler.service';
 
 @NgModule({
-  declarations: [AppComponent, AppHostComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     RouterModule.forRoot([]),
     MicroFrontendsCoreModule.forRoot({}),
+    MicroFrontendsVueHandlersModule.forRoot(),
   ],
   providers: [
     {
       provide: APP_INITIALIZER,
       useFactory: initializeMicroFrontendsService,
       deps: [MicroFrontendsService],
-      multi: true,
-    },
-    {
-      provide: AppHandler,
-      useClass: VueAppHandler,
       multi: true,
     },
   ],
