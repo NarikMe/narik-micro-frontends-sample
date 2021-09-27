@@ -9,7 +9,7 @@
           "exposedModule": "./app",
           "development": {
             "entry": "http://localhost:4202/remoteEntry.js",
-            "active": false
+            "active": true
           }
         }
       },
@@ -78,6 +78,12 @@
       "key": "payment-type",
       "app": "payment-type2",
       "title": "Payment Type 2"
+    }
+  ],
+  "routes": [
+    {
+      "key": "checkout",
+      "path": ""
     }
   ]
 }

@@ -27,19 +27,20 @@
         "exposedModule": "./app",
         "development": {
           "entry": "http://localhost:4203/remoteEntry.js",
-          "active": false
+          "active": true
         }
       }
     },
     "handle": {
       "type": "angular-routing-app",
+      "path": "checkout",
       "module": "AppModule"
     },
     "metadata": {
       "path": "assets/apps/shopping-cart/shopping-cart/assets/metadata.json",
       "development": {
         "path": "http://localhost:4203/assets/metadata.json",
-        "active": false
+        "active": true
       }
     }
   },
@@ -84,6 +85,14 @@
       "type": "angular-routing-app",
       "module": "AppModule",
       "path": ""
+    },
+    "metadata": {
+      "routes": [
+        {
+          "key": "products",
+          "path": ""
+        }
+      ]
     }
   },
   {
