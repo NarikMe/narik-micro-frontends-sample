@@ -20,7 +20,6 @@
   },
   {
     "key": "shopping-cart",
-    "eagerInitialize": true,
     "load": {
       "remote": {
         "key": "shopping_cart",
@@ -46,7 +45,6 @@
   },
   {
     "key": "user-profile",
-    "eagerInitialize": true,
     "load": {
       "remote": {
         "key": "user_profile",
@@ -72,7 +70,6 @@
   },
   {
     "key": "products",
-    "eagerInitialize": true,
     "load": {
       "remote": {
         "entry": "assets/apps/products/remoteEntry.js",
