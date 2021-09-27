@@ -4,9 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { MicroFrontendsCoreModule } from '@narik/micro-frontends-core';
-import {
-  MicroFrontendsService,
-} from '@narik/micro-frontends-infrastructure';
+import { MicroFrontendsService } from '@narik/micro-frontends-infrastructure';
+import { MicroFrontendsVueHandlersModule } from '@narik/micro-frontends-vue-handlers';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -17,6 +16,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     RouterModule.forRoot([]),
     MicroFrontendsCoreModule.forRoot({}),
+    MicroFrontendsVueHandlersModule.forRoot(),
   ],
   providers: [
     {
