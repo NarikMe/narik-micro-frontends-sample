@@ -42,6 +42,10 @@
                 "module.rules": "prepend",
                 "plugins": "prepend"
               }
+            },
+            "sourceMap": {
+              "scripts": true,
+              "vendors": true
             }
           },
           "configurations": {
