@@ -1259,24 +1259,24 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
-"@narik/micro-frontends-core@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-core/-/micro-frontends-core-0.0.1.tgz#34dc971c2792afc139453e6297859383a97bb67a"
-  integrity sha512-nL3VZiF+gjAeWDxHeqpYbA8OPfCFyGCymtJ2Ah+h9htnxWOKYJth/4WLgwJkF3uLHU6HWv/JSszEcxjYUTk68w==
+"@narik/micro-frontends-core@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-core/-/micro-frontends-core-1.0.0.tgz#77b04c791d6525ec49ae52fc720a819f5b392fea"
+  integrity sha512-NM0+FGAVYo71Gkr04p5A3dsYSb8R1QtzvOnh6aQkGj4rwLPnnuiNI7HPNJ2dCd/uMlsV6N+EibLTBvwZLOqfcA==
   dependencies:
     tslib "^2.3.0"
 
-"@narik/micro-frontends-infrastructure@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-infrastructure/-/micro-frontends-infrastructure-0.0.1.tgz#9b30a3b6189609e38c8530ba9cda992624738ecf"
-  integrity sha512-ZANM6JHoCprIGTGRQN95xkXKOP8FD+ACdXR4fw8QlvnGsD3hU+Mwu5xheEPlAtlI5oOPKEPvVoWVVOxXsFc47g==
+"@narik/micro-frontends-infrastructure@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-infrastructure/-/micro-frontends-infrastructure-1.0.0.tgz#93481504422222b5b841a173dbe388db1c431936"
+  integrity sha512-86iSoSLQvRAACdigoHPiUpOLgim8lwfrUTORxY+jtz0qY4eeFV84/MFFeUjZ1jmnRG55QujtsWw0IJEqEbHlRA==
   dependencies:
     tslib "^2.3.0"
 
-"@narik/micro-frontends-ui@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-ui/-/micro-frontends-ui-0.0.1.tgz#dcf98b8e6c36772880f1bec2a7d16130cad9e16a"
-  integrity sha512-yYPUfW1bvZEbfsqDk4tHKGQGRXcIGsypCWy+WiwyKGr/fGUH+zycOmK3c9X5nKIyHi1+z9irwf7iod7dHASmUw==
+"@narik/micro-frontends-ui@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-ui/-/micro-frontends-ui-1.0.0.tgz#9c96630b0d270b890630038ac5523c269b38199d"
+  integrity sha512-p4iFvKPT7PwLZyy039pQRsaAKfwV22gyrNUM2ilRad4IaRQcF4rwzbLqY8h+kX0ppkT0NgCmMIfSXQAkjTazrA==
   dependencies:
     tslib "^2.3.0"
 
