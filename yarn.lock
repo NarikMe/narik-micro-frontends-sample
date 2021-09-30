@@ -1280,10 +1280,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@narik/micro-frontends-vue-handlers@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-vue-handlers/-/micro-frontends-vue-handlers-0.0.1.tgz#5523f7a2be178a4369b863991e4dc056b097c463"
-  integrity sha512-dUiWORIx+Nkw4ZHqB/Sv79vQ6ykBRxmtIFeAW3CQpNavYyyTh6YAY2fieyL93QIVNz0g8lik9NxuNKrBof16QA==
+"@narik/micro-frontends-vue-handlers@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-vue-handlers/-/micro-frontends-vue-handlers-0.0.2.tgz#ebaa367499ed590a344b9c1387757c192c0e20ed"
+  integrity sha512-azxNI0OqD47sQBehBC4+0orN8+xUbMsLksGYhIx1JEsI1gOGE5T85y+7eYxGKKlOhMjpeIwfh0aQJrXl9VgrQQ==
   dependencies:
     tslib "^2.3.0"
 
