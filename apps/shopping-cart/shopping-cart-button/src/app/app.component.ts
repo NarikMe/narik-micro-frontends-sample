@@ -1,14 +1,15 @@
-import { Component, NgModule } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { MatBadgeModule } from '@angular/material/badge';
-import { MatCardModule } from '@angular/material/card';
 import { OverlayModule } from '@angular/cdk/overlay';
-import { MatListModule } from '@angular/material/list';
-
-import { Router, RouterModule } from '@angular/router';
-import { ShoppingCart } from 'shopping-lib';
 import { CommonModule } from '@angular/common';
+import { Component, NgModule } from '@angular/core';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { Router, RouterModule } from '@angular/router';
+import { NavigationService } from '@narik/micro-frontends-infrastructure';
+import { ShoppingCart } from 'shopping-lib';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -18,7 +19,7 @@ import { CommonModule } from '@angular/common';
         width: 50px;
         height: 50px;
       }
-      mat-list{
+      mat-list {
         width: 250px;
       }
     `,
@@ -27,14 +28,18 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   isOpen = false;
 
-  constructor(private router: Router, public shoppingCart: ShoppingCart) {}
+  constructor(
+    private router: Router,
+    public shoppingCart: ShoppingCart,
+    private navigationService: NavigationService
+  ) {}
 
-  navigateToCart() {
-    this.router.navigate(['/shopping-cart']);
+  checkout() {
+    this.navigationService.navigate('checkout');
     this.isOpen = false;
   }
-  navigateToHome() {
-    this.router.navigate(['/']);
+  navigateToProducts() {
+    this.navigationService.navigate('products');
     this.isOpen = false;
   }
 }

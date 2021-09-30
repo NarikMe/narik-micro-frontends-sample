@@ -79,5 +79,11 @@
       "app": "payment-type2",
       "title": "Payment Type 2"
     }
+  ],
+  "routes": [
+    {
+      "key": "checkout",
+      "path": ""
+    }
   ]
 }

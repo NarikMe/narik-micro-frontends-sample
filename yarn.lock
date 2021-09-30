@@ -1260,30 +1260,30 @@
     schema-utils "^2.7.0"
 
 "@narik/micro-frontends-core@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-core/-/micro-frontends-core-1.0.0.tgz#77b04c791d6525ec49ae52fc720a819f5b392fea"
-  integrity sha512-NM0+FGAVYo71Gkr04p5A3dsYSb8R1QtzvOnh6aQkGj4rwLPnnuiNI7HPNJ2dCd/uMlsV6N+EibLTBvwZLOqfcA==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-core/-/micro-frontends-core-1.1.0.tgz#cd3dd6435c2ab78374c75da89de4088fd11c339f"
+  integrity sha512-CqK8d2zb6846dBYaskacf2GrSbEoeEMlgwcBzSTQugZFDQFBGjkQR+J4O6y8geEt5IlvV5YVlM7B7kTapL36cw==
   dependencies:
     tslib "^2.3.0"
 
 "@narik/micro-frontends-infrastructure@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-infrastructure/-/micro-frontends-infrastructure-1.0.0.tgz#93481504422222b5b841a173dbe388db1c431936"
-  integrity sha512-86iSoSLQvRAACdigoHPiUpOLgim8lwfrUTORxY+jtz0qY4eeFV84/MFFeUjZ1jmnRG55QujtsWw0IJEqEbHlRA==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-infrastructure/-/micro-frontends-infrastructure-1.1.0.tgz#74dc2c477d81c73a834287f43c0a7b7959b43f65"
+  integrity sha512-XKHlp88ERJLbdWB1qYM4Kjh76QdR9wbL+QRy76FlcKOTHfVuZEGYtpvSi5fEm72WqU2DM39BU4SqlJEs94Fb2A==
   dependencies:
     tslib "^2.3.0"
 
 "@narik/micro-frontends-ui@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-ui/-/micro-frontends-ui-1.0.0.tgz#9c96630b0d270b890630038ac5523c269b38199d"
-  integrity sha512-p4iFvKPT7PwLZyy039pQRsaAKfwV22gyrNUM2ilRad4IaRQcF4rwzbLqY8h+kX0ppkT0NgCmMIfSXQAkjTazrA==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-ui/-/micro-frontends-ui-1.1.0.tgz#ee18a117d949a0a13b4bd10b4d0a8b66b56d29d4"
+  integrity sha512-ev7J3640ENJb2T/x+OMLT0JAM8f7puEVn3lBLYxFDNIOeslCQ62tQfVY1qyv1fPQ/N8PRks25KE9YksZ5N7/6A==
   dependencies:
     tslib "^2.3.0"
 
-"@narik/micro-frontends-vue-handlers@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-vue-handlers/-/micro-frontends-vue-handlers-0.0.1.tgz#5523f7a2be178a4369b863991e4dc056b097c463"
-  integrity sha512-dUiWORIx+Nkw4ZHqB/Sv79vQ6ykBRxmtIFeAW3CQpNavYyyTh6YAY2fieyL93QIVNz0g8lik9NxuNKrBof16QA==
+"@narik/micro-frontends-vue-handlers@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-vue-handlers/-/micro-frontends-vue-handlers-0.0.2.tgz#ebaa367499ed590a344b9c1387757c192c0e20ed"
+  integrity sha512-azxNI0OqD47sQBehBC4+0orN8+xUbMsLksGYhIx1JEsI1gOGE5T85y+7eYxGKKlOhMjpeIwfh0aQJrXl9VgrQQ==
   dependencies:
     tslib "^2.3.0"
 

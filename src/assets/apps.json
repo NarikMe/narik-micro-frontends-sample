@@ -33,6 +33,7 @@
     },
     "handle": {
       "type": "angular-routing-app",
+      "path": "checkout",
       "module": "AppModule"
     },
     "metadata": {
@@ -84,6 +85,14 @@
       "type": "angular-routing-app",
       "module": "AppModule",
       "path": ""
+    },
+    "metadata": {
+      "routes": [
+        {
+          "key": "products",
+          "path": ""
+        }
+      ]
     }
   },
   {

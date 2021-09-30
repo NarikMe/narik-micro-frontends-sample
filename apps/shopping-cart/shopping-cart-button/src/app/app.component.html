@@ -31,7 +31,7 @@
     </mat-card-content>
     <mat-card-actions *ngIf="shoppingCart.count$ | async">
       <h5>Total Price:{{ shoppingCart.price$ | async }} $</h5>
-      <button mat-flat-button color="accent" (click)="navigateToCart()">
+      <button mat-flat-button color="accent" (click)="checkout()">
         Checkout
       </button>
     </mat-card-actions>
@@ -40,7 +40,7 @@
 
 <ng-template #emptyCart>
   <h5>Shopping Cart is empty!</h5>
-  <button mat-flat-button color="primary" (click)="navigateToHome()">
+  <button mat-flat-button color="primary" (click)="navigateToProducts()">
     START SHOPPING NOW
   </button>
 </ng-template>
