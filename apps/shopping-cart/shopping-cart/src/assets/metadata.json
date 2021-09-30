@@ -9,7 +9,7 @@
           "exposedModule": "./app",
           "development": {
             "entry": "http://localhost:4202/remoteEntry.js",
-            "active": true
+            "active": false
           }
         }
       },
