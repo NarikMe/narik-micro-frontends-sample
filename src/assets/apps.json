@@ -27,7 +27,7 @@
         "exposedModule": "./app",
         "development": {
           "entry": "http://localhost:4203/remoteEntry.js",
-          "active": true
+          "active": false
         }
       }
     },
@@ -40,7 +40,7 @@
       "path": "assets/apps/shopping-cart/shopping-cart/assets/metadata.json",
       "development": {
         "path": "http://localhost:4203/assets/metadata.json",
-        "active": true
+        "active": false
       }
     }
   },
