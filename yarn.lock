@@ -1280,6 +1280,13 @@
   dependencies:
     tslib "^2.3.0"
 
+"@narik/micro-frontends-vue-handlers@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-vue-handlers/-/micro-frontends-vue-handlers-0.0.1.tgz#5523f7a2be178a4369b863991e4dc056b097c463"
+  integrity sha512-dUiWORIx+Nkw4ZHqB/Sv79vQ6ykBRxmtIFeAW3CQpNavYyyTh6YAY2fieyL93QIVNz0g8lik9NxuNKrBof16QA==
+  dependencies:
+    tslib "^2.3.0"
+
 "@ngtools/webpack@12.2.1":
   version "12.2.1"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-12.2.1.tgz#9133b47662dfa88ef9494f3eae008053d5e999eb"
