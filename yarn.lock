@@ -1259,17 +1259,17 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
-"@narik/micro-frontends-core@^1.0.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-core/-/micro-frontends-core-1.1.0.tgz#cd3dd6435c2ab78374c75da89de4088fd11c339f"
-  integrity sha512-CqK8d2zb6846dBYaskacf2GrSbEoeEMlgwcBzSTQugZFDQFBGjkQR+J4O6y8geEt5IlvV5YVlM7B7kTapL36cw==
+"@narik/micro-frontends-core@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-core/-/micro-frontends-core-1.2.0.tgz#d4d799150a44077e4a1c4f1801caf8498142f0da"
+  integrity sha512-Bgdt9z0DlrkT1itExya5Ee7BwLsGBZExdJ6gfpQRnLRxMkYj+4E/vyt5JyaV28ZhCtJt0agsWn1pQcSRx0/MUg==
   dependencies:
     tslib "^2.3.0"
 
-"@narik/micro-frontends-infrastructure@^1.0.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-infrastructure/-/micro-frontends-infrastructure-1.1.0.tgz#74dc2c477d81c73a834287f43c0a7b7959b43f65"
-  integrity sha512-XKHlp88ERJLbdWB1qYM4Kjh76QdR9wbL+QRy76FlcKOTHfVuZEGYtpvSi5fEm72WqU2DM39BU4SqlJEs94Fb2A==
+"@narik/micro-frontends-infrastructure@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-infrastructure/-/micro-frontends-infrastructure-1.2.0.tgz#f61f69d91c3ebd3951ccb6074fd78e2599caf299"
+  integrity sha512-zpu+VSg5Rkua1F0eifN8ZeBnzzSA5XPv6DqaWFgUtI30ID44D0mnUJgq93fN19WQ64K+zymOYYhmkQIjtdJwCA==
   dependencies:
     tslib "^2.3.0"
 
