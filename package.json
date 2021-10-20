@@ -28,10 +28,10 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
-    "@narik/micro-frontends-core": "^1.2.0",
-    "@narik/micro-frontends-infrastructure": "^1.2.0",
+    "@narik/micro-frontends-core": "^1.3.0",
+    "@narik/micro-frontends-infrastructure": "^1.3.0",
     "@narik/micro-frontends-ui": "^1.0.0",
-    "@narik/micro-frontends-vue-handlers": "^0.0.2",
+    "@narik/micro-frontends-vue-handlers": "^0.0.3",
     "rxjs": "~7.3.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

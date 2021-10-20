@@ -1259,17 +1259,17 @@
     merge-source-map "^1.1.0"
     schema-utils "^2.7.0"
 
-"@narik/micro-frontends-core@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-core/-/micro-frontends-core-1.2.0.tgz#d4d799150a44077e4a1c4f1801caf8498142f0da"
-  integrity sha512-Bgdt9z0DlrkT1itExya5Ee7BwLsGBZExdJ6gfpQRnLRxMkYj+4E/vyt5JyaV28ZhCtJt0agsWn1pQcSRx0/MUg==
+"@narik/micro-frontends-core@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-core/-/micro-frontends-core-1.3.0.tgz#a30b84ada0163418d1516a0a8684db2ce9a2f22d"
+  integrity sha512-Y0mJedFV5rYjLjIJFN+n/Y80M6MqAKZ8MqzenNnRWktAlJqcSgWOvqkRYc9mmo8z9UlaIWIxUdQ0b1obFxjhDQ==
   dependencies:
     tslib "^2.3.0"
 
-"@narik/micro-frontends-infrastructure@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-infrastructure/-/micro-frontends-infrastructure-1.2.0.tgz#f61f69d91c3ebd3951ccb6074fd78e2599caf299"
-  integrity sha512-zpu+VSg5Rkua1F0eifN8ZeBnzzSA5XPv6DqaWFgUtI30ID44D0mnUJgq93fN19WQ64K+zymOYYhmkQIjtdJwCA==
+"@narik/micro-frontends-infrastructure@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-infrastructure/-/micro-frontends-infrastructure-1.3.0.tgz#04942f062d499462da4723bb1544d0e36aa593ae"
+  integrity sha512-UBLvZfsg42voTB4SRVXb0F6Ie/D0P186Ez8P5MBDVi9U76BOpd1Q5Knqq833+UUDcrNYVu6AJ+NYYzOcCvn+lQ==
   dependencies:
     tslib "^2.3.0"
 
@@ -1280,10 +1280,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@narik/micro-frontends-vue-handlers@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-vue-handlers/-/micro-frontends-vue-handlers-0.0.2.tgz#ebaa367499ed590a344b9c1387757c192c0e20ed"
-  integrity sha512-azxNI0OqD47sQBehBC4+0orN8+xUbMsLksGYhIx1JEsI1gOGE5T85y+7eYxGKKlOhMjpeIwfh0aQJrXl9VgrQQ==
+"@narik/micro-frontends-vue-handlers@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@narik/micro-frontends-vue-handlers/-/micro-frontends-vue-handlers-0.0.3.tgz#7b1334c2cbbe692dcdf6f3b621b531f12313a096"
+  integrity sha512-hT1WWDOOZFkIWrcTBExsexMjphZo3jGc/qzvrPsF07TRVb/qMt0L9tbDfHNBhSxadhJXHmR5lgtZbBM7H1yPdw==
   dependencies:
     tslib "^2.3.0"
 
