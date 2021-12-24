@@ -5,7 +5,7 @@
       "load": {
         "remote": {
           "key": "shopping_cart_button",
-          "entry": "assets/apps/shopping-cart/shopping-cart-button/remoteEntry.js",
+          "entry": "./assets/apps/shopping-cart/shopping-cart-button/remoteEntry.js",
           "exposedModule": "./app",
           "development": {
             "entry": "http://localhost:4202/remoteEntry.js",
@@ -25,7 +25,7 @@
       "load": {
         "remote": {
           "key": "shopping_cart_service",
-          "entry": "assets/apps/shopping-cart/shopping-cart-service/remoteEntry.js",
+          "entry": "./assets/apps/shopping-cart/shopping-cart-service/remoteEntry.js",
           "exposedModule": "./app",
           "development": {
             "entry": "http://localhost:4207/remoteEntry.js",
@@ -43,7 +43,8 @@
       "load": {
         "remote": {
           "key": "payment_type1",
-          "entry": "assets/apps/shopping-cart/payment-type1/remoteEntry.js",
+          "type": "script",
+          "entry": "./assets/apps/shopping-cart/payment-type1/remoteEntry.js",
           "exposedModule": "./web-components"
         }
       },
@@ -57,7 +58,8 @@
       "load": {
         "remote": {
           "key": "payment_type2",
-          "entry": "assets/apps/shopping-cart/payment-type2/remoteEntry.js",
+          "type": "script",
+          "entry": "./assets/apps/shopping-cart/payment-type2/remoteEntry.js",
           "exposedModule": "./web-components"
         }
       },

@@ -5,7 +5,7 @@
       "load": {
         "remote": {
           "key": "current_user",
-          "entry": "assets/apps/user/current-user/remoteEntry.js",
+          "entry": "./assets/apps/user/current-user/remoteEntry.js",
           "exposedModule": "./app",
           "development": {
             "entry": "http://localhost:4205/remoteEntry.js",

@@ -2,6 +2,7 @@
 
 # compiled output
 /dist
+/.angular
 /src/assets/apps
 /tmp
 /out-tsc

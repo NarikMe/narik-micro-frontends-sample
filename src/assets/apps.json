@@ -4,7 +4,7 @@
     "isDefault": true,
     "load": {
       "remote": {
-        "entry": "assets/apps/shell/remoteEntry.js",
+        "entry": "./assets/apps/shell/remoteEntry.js",
         "exposedModule": "./app",
         "development": {
           "entry": "http://localhost:4201/remoteEntry.js",
@@ -23,7 +23,7 @@
     "load": {
       "remote": {
         "key": "shopping_cart",
-        "entry": "assets/apps/shopping-cart/shopping-cart/remoteEntry.js",
+        "entry": "./assets/apps/shopping-cart/shopping-cart/remoteEntry.js",
         "exposedModule": "./app",
         "development": {
           "entry": "http://localhost:4203/remoteEntry.js",
@@ -37,7 +37,7 @@
       "module": "AppModule"
     },
     "metadata": {
-      "path": "assets/apps/shopping-cart/shopping-cart/assets/metadata.json",
+      "path": "./assets/apps/shopping-cart/shopping-cart/assets/metadata.json",
       "development": {
         "path": "http://localhost:4203/assets/metadata.json",
         "active": false
@@ -49,7 +49,7 @@
     "load": {
       "remote": {
         "key": "user_profile",
-        "entry": "assets/apps/user/user-profile/remoteEntry.js",
+        "entry": "./assets/apps/user/user-profile/remoteEntry.js",
         "exposedModule": "./app",
         "development": {
           "entry": "http://localhost:4204/remoteEntry.js",
@@ -62,7 +62,7 @@
       "module": "AppModule"
     },
     "metadata": {
-      "path": "assets/apps/user/user-profile/assets/metadata.json",
+      "path": "./assets/apps/user/user-profile/assets/metadata.json",
       "development": {
         "path": "http://localhost:4204/assets/metadata.json",
         "active": false
@@ -73,7 +73,7 @@
     "key": "products",
     "load": {
       "remote": {
-        "entry": "assets/apps/products/remoteEntry.js",
+        "entry": "./assets/apps/products/remoteEntry.js",
         "exposedModule": "./app",
         "development": {
           "entry": "http://localhost:4206/remoteEntry.js",
@@ -101,7 +101,7 @@
     "load": {
       "remote": {
         "key": "tax_service",
-        "entry": "assets/apps/tax-service/remoteEntry.js",
+        "entry": "./assets/apps/tax-service/remoteEntry.js",
         "exposedModule": "./app",
         "development": {
           "entry": "http://localhost:4208/remoteEntry.js",
@@ -119,7 +119,8 @@
     "load": {
       "remote": {
         "key": "vue_app1",
-        "entry": "assets/apps/vue-app1/remoteEntry.js",
+        "type": "script",
+        "entry": "./assets/apps/vue-app1/remoteEntry.js",
         "exposedModule": "./app-creator",
         "development": {
           "entry": "http://localhost:4208/remoteEntry.js",
